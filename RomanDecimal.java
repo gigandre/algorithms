@@ -8,7 +8,7 @@ public class RomanDecimal {
 	private static Map<Integer, String> decimalToRoman =  new LinkedHashMap<Integer, String>();
 	private static Map<String, Integer> romanToDecimal = new HashMap<String, Integer>();
 
-	 {
+	{
 		romanToDecimal.put("I", 1);
 		romanToDecimal.put("IV", 4);
 		romanToDecimal.put("V", 5);
@@ -25,7 +25,7 @@ public class RomanDecimal {
 	}
 
 
-	 {
+	{
 		decimalToRoman.put(1000, "M");
 		decimalToRoman.put(900, "CM");
 		decimalToRoman.put(500, "D");
@@ -42,8 +42,8 @@ public class RomanDecimal {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(new RomanDecimal().convertRomanToDecimal("MDXXIII"));
-		System.out.println(new RomanDecimal().convertDecimalToRoman(1523));
+		System.out.println(new RomanDecimal().convertRomanToDecimal("MMXIX"));
+		System.out.println(new RomanDecimal().convertDecimalToRoman(2019));
 
 	}
 
@@ -63,7 +63,7 @@ public class RomanDecimal {
 
 			lastValue = currentValue;
 		}
-		
+
 		return decimal;
 	}
 
